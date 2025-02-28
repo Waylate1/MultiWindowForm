@@ -17,6 +17,8 @@ namespace MultiWindowForm
                 PhoneNumber = "(560)-654-0972"
             });
             ReloadDateGrid();
+
+
         }
         private void ReloadDateGrid()
         {
@@ -37,22 +39,37 @@ namespace MultiWindowForm
         public void EditCustomer(int id, Customer updatedCustomer)
         {
             MessageBox.Show("Mainform  is editing the customer now.");
+
+            var cust = _customerList.Find(c => c.CustomerId == id);
+
+            if (cust != null)
+            {
+                cust.Name = updatedCustomer.Name;
+                cust.Email = updatedCustomer.Email;
+                cust.PhoneNumber = updatedCustomer.PhoneNumber;
+                ReloadDateGrid();
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            
+
             Customer cust;
 
             var index = dgvCustomers.SelectedRows[0].Index;
 
             cust = _customerList[index];
-            
+
             _customerForm.LoadCustomer(cust);
 
             _customerForm.ToggleEdit(true);
 
             _customerForm.Show();
+        }
+
+        private void dgvCustomers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            btnEdit.Visible = true;
         }
     }
 }
