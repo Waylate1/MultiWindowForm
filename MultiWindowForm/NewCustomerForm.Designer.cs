@@ -82,7 +82,7 @@
             // txtPhoneNumber
             // 
             txtPhoneNumber.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtPhoneNumber.Location = new Point(94, 74);
+            txtPhoneNumber.Location = new Point(94, 45);
             txtPhoneNumber.Name = "txtPhoneNumber";
             txtPhoneNumber.Size = new Size(331, 23);
             txtPhoneNumber.TabIndex = 5;
@@ -90,7 +90,7 @@
             // lblPhoneHeading
             // 
             lblPhoneHeading.AutoSize = true;
-            lblPhoneHeading.Location = new Point(0, 77);
+            lblPhoneHeading.Location = new Point(0, 48);
             lblPhoneHeading.Name = "lblPhoneHeading";
             lblPhoneHeading.Size = new Size(91, 15);
             lblPhoneHeading.TabIndex = 4;
@@ -99,7 +99,7 @@
             // txtEmail
             // 
             txtEmail.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtEmail.Location = new Point(94, 45);
+            txtEmail.Location = new Point(94, 74);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(331, 23);
             txtEmail.TabIndex = 3;
@@ -107,7 +107,7 @@
             // lblEmailHeading
             // 
             lblEmailHeading.AutoSize = true;
-            lblEmailHeading.Location = new Point(0, 48);
+            lblEmailHeading.Location = new Point(0, 74);
             lblEmailHeading.Name = "lblEmailHeading";
             lblEmailHeading.Size = new Size(39, 15);
             lblEmailHeading.TabIndex = 2;
